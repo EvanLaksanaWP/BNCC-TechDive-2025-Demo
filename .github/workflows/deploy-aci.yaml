@@ -10,14 +10,14 @@ env:
   # AZURE_CREDENTIALS = ...  # rahasia, disimpan di GitHub Secrets
 
   RESOURCE_GROUP: bncc-techdive-2025 # (WAJIB) sesuaikan dengan Resource Group name Anda
+  LOCATION: "southeastasia" # (WAJIB) jika Anda menggunakan location lain, maka sesuaikan,
   ACR_LOGIN_SERVER: bnccrregistry.azurecr.io # (WAJIB) sesuaikan dengan konfigurasi Login Server pada Container Registies Anda
   ACR_USERNAME: bnccrregistry # (WAJIB) sesuaikan dengan konfigurasi Username pada Container Registries Anda
+  DNS_LABEL: bncc-techdive-2025 # (WAJIB) nama DNS harus unik secara global, gunakan nama DNS lain
 
   # (OPSIONAL) bisa Anda sesuaikan dengan preferensi Anda
   IMAGE_NAME: techdive-webpage 
   ACI_NAME: techdive-webpage-aci
-  DNS_LABEL: bncc-techdive-2025
-  LOCATION: "southeastasia"
 
 jobs:
   # ========== 1) TEST ==========
