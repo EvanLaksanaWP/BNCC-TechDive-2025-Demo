@@ -9,11 +9,12 @@ env:
   # ACR_PASSWORD = ...  # rahasia, disimpan di GitHub Secrets
   # AZURE_CREDENTIALS = ...  # rahasia, disimpan di GitHub Secrets
 
-  
-  ACR_LOGIN_SERVER: bnccrregistry.azurecr.io
-  ACR_USERNAME: bnccrregistry
-  IMAGE_NAME: techdive-webpage
-  RESOURCE_GROUP: bncc-techdive-2025
+  RESOURCE_GROUP: bncc-techdive-2025 # sesuaikan dengan Resource Group name Anda
+  ACR_LOGIN_SERVER: bnccrregistry.azurecr.io # sesuaikan dengan konfigurasi Login Server pada Container Registies Anda
+  ACR_USERNAME: bnccrregistry # sesuaikan dengan konfigurasi Username pada Container Registries Anda
+
+  # (OPSIONAL) bisa Anda sesuaikan dengan preferensi Anda
+  IMAGE_NAME: techdive-webpage 
   ACI_NAME: techdive-webpage-aci
   DNS_LABEL: bncc-techdive-2025
   LOCATION: "southeastasia"
